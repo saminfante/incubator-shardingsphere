@@ -80,7 +80,7 @@
         <logback.version>1.2.0</logback.version>
         
         <hikari-cp.version>2.4.11</hikari-cp.version>
-        <alibaba.druid.version>1.1.11</alibaba.druid.version>
+        <alibaba.druid.version>1.1.21</alibaba.druid.version>
         <commons-dbcp2.version>2.2.0</commons-dbcp2.version>
         <tomcat-dbcp.version>9.0.14</tomcat-dbcp.version>
         <commons-pool.version>1.6</commons-pool.version>
