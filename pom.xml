@@ -67,7 +67,7 @@
         <atomikos.version>4.0.6</atomikos.version>
         
         <curator.version>2.10.0</curator.version>
-        <opentracing.version>0.30.0</opentracing.version>
+        <opentracing.version>0.33.0</opentracing.version>
         
         <lombok.version>1.16.4</lombok.version>
         
