@@ -87,7 +87,7 @@
         <h2.version>1.4.196</h2.version>
         <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
         <postgresql.version>42.2.5</postgresql.version>
-        <mssql.version>6.1.7.jre7-preview</mssql.version>
+        <mssql.version>9.2.1.jre15</mssql.version>
         
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
         <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
