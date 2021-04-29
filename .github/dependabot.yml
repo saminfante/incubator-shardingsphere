@@ -1,0 +1,72 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: saminfante
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:49"
+    timezone: US/Central
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: com.microsoft.sqlserver:mssql-jdbc
+    versions:
+    - 9.2.0.jre15
+    - 9.2.1.jre15
+    - 9.3.0.jre15-preview
+  - dependency-name: org.apache.tomcat:tomcat-dbcp
+    versions:
+    - 10.0.0
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.mockito:mockito-inline
+    versions:
+    - 3.7.7
+    - 3.8.0
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+    - 3.8.0
+  - dependency-name: org.postgresql:postgresql
+    versions:
+    - 42.2.18
+    - 42.2.19
+  - dependency-name: com.alibaba:druid
+    versions:
+    - 1.2.4
+    - 1.2.5
+  - dependency-name: org.projectlombok:lombok
+    versions:
+    - 1.18.18
+  - dependency-name: org.antlr:antlr4-maven-plugin
+    versions:
+    - 4.9.1
+  - dependency-name: org.antlr:antlr4-runtime
+    versions:
+    - 4.9.1
+  - dependency-name: org.codehaus.groovy:groovy:indy
+    versions:
+    - 3.0.7
+  - dependency-name: org.yaml:snakeyaml
+    versions:
+    - "1.27"
+  - dependency-name: org.apache.maven.plugins:maven-checkstyle-plugin
+    versions:
+    - 3.1.1
+  - dependency-name: kr.motd.maven:os-maven-plugin
+    versions:
+    - 1.6.2
+  - dependency-name: org.apache.maven.plugins:maven-plugin-plugin
+    versions:
+    - 3.6.0
+  - dependency-name: org.apache.maven.plugins:maven-jxr-plugin
+    versions:
+    - 3.0.0
+  registries:
+  - git-github-com
